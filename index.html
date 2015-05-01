@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grid Item Animation Layout - Demo 2</title>
+		<meta name="description" content="A responsive, magazine-like website layout with a grid item animation effect when opening the content" />
+		<meta name="keywords" content="grid, layout, effect, animated, responsive, magazine, template, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
+			<div id="theSidebar" class="sidebar">
+				<button class="close-button fa fa-fw fa-close"></button>
+				<!--<div class="codrops-links">
+					<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Tutorials/MotionBlurEffect/" title="Previous Demo"><span>Previous Demo</span></a>
+					<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=23872" title="Back to the article"><span>Back to the Codrops article</span></a>
+				</div>-->
+				<h1><span>Animated<span> Grid Layout</h1>
+				<nav class="codrops-demos">
+					<a href="#">Demo 1</a>
+					<a href="#">Demo 2</a>
+					<a class="current-demo" href="index.html">Demo 3</a>
+				</nav>
+				<!--<div class="related">
+					<h3>Related Demos</h3>
+					<a href="http://tympanus.net/Development/BookPreview/">Book Preview</a>
+					<a href="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/">Thumbnail Grid</a>
+					<a href="http://tympanus.net/Development/3DGridEffect/">3D Grid Effect</a>
+				</div>-->
+			</div>
+			<div id="theGrid" class="main">
+				<section class="grid">
+					<header class="top-bar">
+						<h2 class="top-bar__headline">Latest articles</h2>
+						<div class="filter">
+							<span>Filter by:</span>
+							<span class="dropdown">Popular</span>
+						</div>
+					</header>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Hope for Amy Walters</h2>
+						<div class="loader"></div>
+						<span class="category">Life &amp; Death</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/4.png" alt="author04" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">My Father told me...</h2>
+						<div class="loader"></div>
+						<span class="category">Nature vs. Nurture</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/5.png" alt="author05" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">On Humans &amp; other Beings</h2>
+						<div class="loader"></div>
+						<span class="category">Stories for humans</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/1.png" alt="author01" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 3 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">The Things we Lost in the Fire</h2>
+						<div class="loader"></div>
+						<span class="category">Love &amp; Hate</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/2.png" alt="author02" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 7 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 5 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">What Goes Around Comes Around</h2>
+						<div class="loader"></div>
+						<span class="category">Nutrition</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/3.png" alt="author03" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">What Happens in the Brain?</h2>
+						<div class="loader"></div>
+						<span class="category">Neuroscience</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/6.png" alt="author06" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Tasty Labrador Bacon</h2>
+						<div class="loader"></div>
+						<span class="category">Food Ethics</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/7.png" alt="author07" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Ignorance is Bliss</h2>
+						<div class="loader"></div>
+						<span class="category">Philosophy</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/8.png" alt="author08" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Looking Through a Telescope</h2>
+						<div class="loader"></div>
+						<span class="category">Morality &amp; History</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/1.png" alt="author01" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Life Ends. Period.</h2>
+						<div class="loader"></div>
+						<span class="category">Philosophy</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/2.png" alt="author02" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">The Hunger of a Teenager</h2>
+						<div class="loader"></div>
+						<span class="category">Society</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/3.png" alt="author03" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Disorders are the New Order</h2>
+						<div class="loader"></div>
+						<span class="category">Mental Health</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/4.png" alt="author04" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">On Humans &amp; other Beings</h2>
+						<div class="loader"></div>
+						<span class="category">Stories for humans</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/1.png" alt="author01" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 9 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 3 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">The Things we Lost in the Fire</h2>
+						<div class="loader"></div>
+						<span class="category">Love &amp; Hate</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/2.png" alt="author02" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 7 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 5 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">What Goes Around Comes Around</h2>
+						<div class="loader"></div>
+						<span class="category">Nutrition</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/3.png" alt="author03" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Hope for Amy Walters</h2>
+						<div class="loader"></div>
+						<span class="category">Life &amp; Death</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/4.png" alt="author04" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">My Father told me...</h2>
+						<div class="loader"></div>
+						<span class="category">Nature vs. Nurture</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/5.png" alt="author05" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">What Happens in the Brain?</h2>
+						<div class="loader"></div>
+						<span class="category">Neuroscience</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/6.png" alt="author06" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Tasty Labrador Bacon</h2>
+						<div class="loader"></div>
+						<span class="category">Food Ethics</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/7.png" alt="author07" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Ignorance is Bliss</h2>
+						<div class="loader"></div>
+						<span class="category">Philosophy</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/8.png" alt="author08" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Looking Through a Telescope</h2>
+						<div class="loader"></div>
+						<span class="category">Morality &amp; History</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/1.png" alt="author01" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Life Ends. Period.</h2>
+						<div class="loader"></div>
+						<span class="category">Philosophy</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/2.png" alt="author02" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">The Hunger of a Teenager</h2>
+						<div class="loader"></div>
+						<span class="category">Society</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/3.png" alt="author03" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<a class="grid__item" href="#">
+						<h2 class="title title--preview">Disorders are the New Order</h2>
+						<div class="loader"></div>
+						<span class="category">Mental Health</span>
+						<div class="meta meta--preview">
+							<img class="meta__avatar" src="img/authors/4.png" alt="author04" /> 
+							<span class="meta__date"><i class="fa fa-calendar-o"></i> 6 Apr</span>
+							<span class="meta__reading-time"><i class="fa fa-clock-o"></i> 2 min read</span>
+						</div>
+					</a>
+					<footer class="page-meta">
+						<span>Load more...</span>
+					</footer>
+				</section>
+				<section class="content">
+					<div class="scroll-wrap">
+						<article class="content__item">
+						</article>
+					</div>
+					<button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
+				</section>
+			</div>
+		</div><!-- /container -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
